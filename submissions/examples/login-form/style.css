@@ -474,3 +474,30 @@
   
   
   }
+
+  /* ==========================================
+   Accessibility Improvements
+========================================== */
+
+.login-card input:focus-visible,
+.login-card button:focus-visible {
+  outline: 3px solid #6366f1;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.25);
+}
+
+/* ==========================================
+   Better Mobile Responsiveness
+========================================== */
+
+@media (max-width: 480px) {
+  .login-card {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .login-logo {
+    font-size: 1.2rem;
+  }
+}
